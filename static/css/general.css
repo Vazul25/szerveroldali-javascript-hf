@@ -1,0 +1,42 @@
+.take-all-space-you-can{
+    width:100%;
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1600px;
+    }
+}
+.profile-pic-size{
+    width: 200px;
+
+}
+.center-margin{
+    margin: auto;
+}
+.row-padding{
+   padding: 15px;
+}
+.search-bar{
+    background-color: lightgrey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pad-break{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.center-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+
+}
+.pgRow {
+
+    display: flex;  /* make the row a flex container */
+    align-items: center; /* vertically center each flex item in the container */
+}
+.hack{
+    margin-top:25px;
+}

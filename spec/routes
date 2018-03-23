@@ -1,0 +1,6 @@
+/Approve            Post+Get
+/Details            Post+Get
+/Home               Get
+/Login              Post+Get
+/New                Post+Get
+/Register           Post+Get
