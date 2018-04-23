@@ -1,0 +1,45 @@
+<%- include('header') %>
+
+<ul class="nav nav-tabs">
+    <ul class="nav nav-tabs">
+        <li class="col-md-4"><a href="Home">Tartozások</a></li>
+        <li class="col-md-4"><a href="New">Új Tartozás</a></li>
+        <li class="active col-md-4"><a href="Approve">Rendezés jováhagyása</a></li>
+    </ul>
+</ul>
+<br>
+<div class="container pad-break">
+
+
+    <%
+
+    for (let i in debtsToApprove)
+    {
+        let item = debtsToApprove[i];
+    %>
+    <div class="col-md-8 col-md-push-2 pad-break">
+        <div class="col-md-3"><img src="default-image.jpg" height="70px"></div>
+        <div class="col-md-3 hack"><a href="Details/<%=item.debtee.id%>">Teszt Elek</a></div>
+        <div class="col-md-3 hack"><%=item.comment%></div>
+        <div class="col-md-2 hack"><%=item.sum%> Ft</div>
+        <div class="col-md-1 hack">
+            <label><input id="<%=item.id%>" type="checkbox" value=""></label>
+        </div>
+    </div>
+    <% } %>
+
+
+    <div class="row ">
+        <div class="col-md-6 col-md-push-8  ">
+            <button class="btn btn-primary">Összes kijelölése</button>
+        </div>
+
+    </div>
+    <div class="row pad-break ">
+        <div class="col-md-8 col-md-push-2">
+            <button class="btn btn-primary col-md-12 ">Rendezés jóváhagyása</button>
+        </div>
+
+    </div>
+</div>
+<%- include('footer') %>

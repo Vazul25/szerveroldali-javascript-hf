@@ -17,22 +17,21 @@ export class Server {
         this.app = express();
         //configure application
         this.config();
-        this.routes=require('./routes/debtRoutes')(this.app);
-        this.routes=require('./routes/outsideRoutes')(this.app);
-
-        this.api();
-    }
-    public api() {
+        require('./routes/debtRoutes')(this.app);
+        require('./routes/outsideRoutes')(this.app); 
 
     }
 
     public config() {
 
-        this.app.use(express.static("../static"));
-        console.log(path.join(__dirname,"../static"));
+        this.app.use(express.static( path.join(__dirname, "../static")));
+        console.log( __dirname );
+        console.log( path.join(__dirname, "../static") );
 
         this.app.use(bodyParser.json());
-
+        this.app.set("views", path.join(__dirname, "../views"));
+        console.log( path.join(__dirname, "../views"));
+        this.app.set("view engine", "ejs");
 
         this.app.use(bodyParser.urlencoded({
             extended: true

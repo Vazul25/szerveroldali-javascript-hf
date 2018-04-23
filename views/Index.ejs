@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PayApp</title>
-  <!--
-    <link href="../static/css/general.css" rel="stylesheet">
-    <link href="../static/css/bootstrap.css" rel="stylesheet">
-    <link href="../static/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="../static/css/theme.css" rel="stylesheet">
-    -->
-    <link href="./css/general.css" rel="stylesheet">
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/bootstrap-theme.css" rel="stylesheet">
-    <link href="./css/theme.css" rel="stylesheet">
-</head>
-<body>
+<%- include('header') %>
+
 <div class="jumbotron vertical-center">
 
         <div class="container">
@@ -39,13 +22,12 @@
                         </div>
 
 
-                        <a href="Home.html" class="btn btn-primary">Login</a>
-                        <a href="Register.html" class="btn btn-success">Register</a>
+                        <a href="Home" class="btn btn-primary">Login</a>
+                        <a href="Register" class="btn btn-success">Register</a>
                     </form>
 
                 </div>
             </div>
         </div>
     </div>
-</body>
-</html>
+<%- include('footer') %>

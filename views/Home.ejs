@@ -1,0 +1,76 @@
+
+<%- include('header') %>
+
+<%  console.log(debts.myDebts); console.log(debts.debtsToMe);  %>
+<div class=" ">
+
+    <ul class="nav nav-tabs">
+        <li class="active col-md-4"><a href="Home">Tartozások</a></li>
+        <li class="col-md-4"><a href="New">Új Tartozás</a></li>
+        <li class=" col-md-4"><a href="Approve">Rendezés jováhagyása</a></li>
+    </ul>
+    <br>
+
+    <div class="row col-md-8 col-md-push-2 ">
+        <div class="col-md-6">
+
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Akiknek tartozok</th>
+                    <th>Összeg</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <%
+
+                for (let i in debts.debtsToMe) {
+                    let item = debts.debtsToMe[i];
+
+                %>
+                <tr>
+                    <td><%=i%></td>
+                    <td><a href="Details/<%=item.debtor.id%>"> <%=item.debtee.fullName%></a></td>
+                    <td><%=item.sum%> Ft</td>
+                </tr>
+                <% } %>
+
+                </tbody>
+            </table>
+            <div class="row  text-center"> Összesen: <%=debts.debtsToMe.map(item => item.sum).reduce((prev, next) => prev + next);%> Ft</div>
+        </div>
+        <div class="col-md-6">
+
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Akik tartoznak</th>
+                    <th>Összeg</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <%
+
+                for (let i in debts.myDebts)
+                {
+                    let item = debts.myDebts[i];
+                    %>
+                <tr>
+                    <td><%=i%></td>
+                    <td><a href="Details/<%=item.debtee.id%>"> <%=item.debtee.fullName%></a></td>
+                    <td><%=item.sum%> Ft</td>
+                </tr>
+                <% } %>
+                </tbody>
+
+            </table>
+            <div class="row  text-center"> Összesen: <%=debts.myDebts.map(item => item.sum).reduce((prev, next) => prev + next);%> Ft</div>
+
+        </div>
+    </div>
+</div>
+<%- include('footer') %>

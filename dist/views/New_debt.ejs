@@ -1,0 +1,56 @@
+<%- include('header') %>
+
+<ul class="nav nav-tabs">
+    <li class=" col-md-4"><a href="Home">Tartozások</a></li>
+    <li class="active col-md-4"><a href="New">Új Tartozás</a></li>
+    <li class=" col-md-4"><a href="Approve">Rendezés jováhagyása</a></li>
+</ul>
+<br>
+<div class="row col-md-12 search-bar">
+    <div class=" col-md-2 col-md-push-2">
+        <div class="form-group ">
+            <label for="sum">Tartozás összege</label>
+            <input type="text" class="form-control" id="sum" placeholder="" value="2400">
+        </div>
+    </div>
+    <div class=" col-md-2 col-md-push-3">
+        <div class="form-group ">
+            <label for="desc">Tartozás leírása</label>
+            <input type="text" class="form-control" id="desc" placeholder="" value="Bevásárlás">
+        </div>
+    </div>
+    <div class=" col-md-2 col-md-push-4">
+
+        <label for="name">Név</label>
+        <input type="text" class="form-control" id="name" placeholder="" value="Pista">
+
+    </div>
+
+</div>
+<div class="row col-md-8 col-md-push-2 pad-break">
+
+    <%
+
+    for (let i in users)
+    {
+        let user = users[i];
+    %>
+    <div class="col-md-6 pad-break ">
+        <div class="col-md-5">
+            <img src="default-image.jpg" width="70" height="70">
+        </div>
+
+        <div class="col-md-5 hack"><a href="Details/<%=user.id%>"><%= user.name %></a> </div>
+        <div class="col-md-2 hack">
+            <label><input id="<%=user.id%>" type="checkbox" value=""></label>
+        </div>
+    </div>
+    <% } %>
+     
+    <div class="col-md-12 text-center  row row-padding">
+        <div class="col-md-6"> <a href="" class="btn btn-primary  take-all-space-you-can">Adja hozzá a kiválasztottakhoz</a>
+        </div>
+        <div class="col-md-6"> <a href="" class="btn btn-primary take-all-space-you-can">Ossza el a kiválasztottak közt</a></div>
+    </div>
+</div>
+<%- include('footer') %>

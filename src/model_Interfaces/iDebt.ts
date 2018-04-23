@@ -1,6 +1,6 @@
 interface iDebt{
     date:Date;
-    price:number;
+    sum:number;
     debtor:iUser;
     debtee:iUser;
     comment:string;
@@ -9,7 +9,7 @@ interface iDebt{
 
 }
 enum DebtState{
-    UnSetteled=0,
+    UnSettled=0,
     UnApproved = 1,
-    Approved=2,
+    Settled=2
 }
