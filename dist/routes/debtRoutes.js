@@ -15,8 +15,8 @@ const debtModel_1 = require("../models/debtModel");
 const userModel_1 = require("../models/userModel");
 module.exports = function (app) {
     var objrep = {
-        debtModel: new debtModel_1.debtModel(0),
-        userModel: new userModel_1.userModel(0)
+        debtModel: new debtModel_1.DebtModel(),
+        userModel: new userModel_1.UserModel()
     };
     app.get('/Approve', authMw(objrep), getSettleIntentsMw(objrep), renderMw(objrep, 'Approve_settle'));
     app.get('/Api/DebtsToApprove', authMw(objrep), getSettleIntentsMw(objrep), jsonResponse(objrep, "debtsToApprove"));

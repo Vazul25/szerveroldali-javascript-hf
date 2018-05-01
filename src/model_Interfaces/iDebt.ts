@@ -1,10 +1,13 @@
-interface iDebt{
+import {iUser} from "./iUser";
+
+export interface iDebt{
+    _id:any;
     date:Date;
     sum:number;
     debtor:iUser;
     debtee:iUser;
     comment:string;
-    id:number;
+
     state:DebtState;
 
 }

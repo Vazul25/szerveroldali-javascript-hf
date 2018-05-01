@@ -2,12 +2,15 @@ import * as bodyParser from "body-parser";
 import * as cookieParser from "cookie-parser";
 import * as express from "express";
 import * as path from "path";
-import { NextFunction, Request,Response, Router } from "express";
+import { NextFunction, Request,  Router } from "express";
+
+import {Response} from "./typings/MyResponseExtension"
 
 export class Server {
 
     public app: express.Application;
     public  routes:any;
+
     public static bootstrap(): Server {
         return new Server();
     }
@@ -17,6 +20,12 @@ export class Server {
         this.app = express();
         //configure application
         this.config();
+
+
+
+
+      
+
         require('./routes/debtRoutes')(this.app);
         require('./routes/outsideRoutes')(this.app); 
 

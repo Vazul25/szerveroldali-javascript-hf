@@ -21,14 +21,14 @@ var getSettleIntentsMw=require("../middlewares/debt/getSettleIntentsMw");
 var settleDebtMw=require("../middlewares/debt/settleDebtMw");
 var getFilteredUsers=require("../middlewares/debt/getFilteredUsers");
 var jsonResponse=require("../middlewares/generic/jsonRespMw");
-import {debtModel} from '../models/debtModel';
-import {userModel} from '../models/userModel';
+import {DebtModel} from '../models/debtModel';
+import {UserModel} from '../models/userModel';
 
 module.exports = function (app: express.Application) {
 
     var objrep={
-        debtModel: new debtModel(0),
-        userModel: new userModel(0)
+        debtModel: new DebtModel(),
+        userModel: new UserModel()
 
     };
 

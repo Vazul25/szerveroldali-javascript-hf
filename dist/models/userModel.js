@@ -1,22 +1,32 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class userModel {
-    constructor(db) {
-        this.userMock = {
-            email: 'mock@gmail.com',
-            fullName: "Test Elek",
-            id: 0,
-            nickName: 'Test',
-            birthDay: new Date()
-        };
-        console.log("db is: " + db);
+const userRepository_1 = require("../Repository/userRepository");
+class UserModel {
+    constructor() {
+        this._userRepository = new userRepository_1.UserRepository();
     }
-    findOne(id, cb) {
-        return cb(null, this.userMock);
+    create(item, callback) {
+        this._userRepository.create(item, callback);
     }
-    filter(searchText, cb) {
-        let mock = [this.userMock, this.userMock, this.userMock];
-        return cb(null, mock);
+    retrieve(callback) {
+        this._userRepository.retrieve(callback);
+    }
+    update(_id, item, callback) {
+        this._userRepository.findById(_id, (err, res) => {
+            if (err)
+                callback(err, res);
+            else
+                this._userRepository.update(res._id, item, callback);
+        });
+    }
+    delete(_id, callback) {
+        this._userRepository.delete(_id, callback);
+    }
+    findById(_id, callback) {
+        this._userRepository.findById(_id, callback);
+    }
+    filter(cond, callback) {
+        this._userRepository.find(cond, callback);
     }
 }
-exports.userModel = userModel;
+exports.UserModel = UserModel;

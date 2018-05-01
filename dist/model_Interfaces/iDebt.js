@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var DebtState;
 (function (DebtState) {
     DebtState[DebtState["UnSettled"] = 0] = "UnSettled";

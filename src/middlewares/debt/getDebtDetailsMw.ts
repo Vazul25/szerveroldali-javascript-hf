@@ -1,10 +1,12 @@
-import {NextFunction, Request, Response} from "express";
-import {debtModel} from "../../models/debtModel";
+import {NextFunction, Request   } from "express";
+import {DebtModel} from "../../models/debtModel";
+
+import {Response} from "../../typings/MyResponseExtension"
 
 //Lekéri a tartozásokat részletező oldalhoz a 2 felhasználó közti összes tartozást
 var requireOption = require('../generic/checkRepositoryMw').requireOption;
 module.exports = function (objectRepository:any) {
-    var debtModel:debtModel = requireOption(objectRepository, 'debtModel');
+    var debtModel:DebtModel = requireOption(objectRepository, 'debtModel');
     return function (req: Request, res: Response, next: NextFunction) {
 
         debtModel.getAllDebtBetweenUsesrs(
