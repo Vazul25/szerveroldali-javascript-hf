@@ -5,6 +5,9 @@ class RepositoryBase {
     constructor(schemaModel) {
         this._model = schemaModel;
     }
+    updateAll(cond, updateTo, options, callback) {
+        this._model.update(cond, updateTo, options, callback);
+    }
     create(item, callback) {
         this._model.create(item, callback);
     }
@@ -22,6 +25,9 @@ class RepositoryBase {
     }
     findById(_id, callback) {
         this._model.findById(_id, callback);
+    }
+    findOne(cond, callback) {
+        this._model.findOne(cond, callback);
     }
     toObjectId(_id) {
         return mongoose_1.Types.ObjectId.createFromHexString(_id);

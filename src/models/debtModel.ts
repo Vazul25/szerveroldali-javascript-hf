@@ -7,6 +7,8 @@ import {DebtRepository} from "../Repository/DebtRepository";
 import {UserRepository} from "../Repository/userRepository";
 import {iUserModel} from "../model_Interfaces/iUser";
 import {iDebtPair} from "../typings/iDebtPair";
+import {Types} from "mongoose";
+import  {DebtState} from "../model_Interfaces/iDebt"
 
 
 
@@ -20,32 +22,69 @@ export class DebtModel {
     constructor( ) {
         this._debtRepository = new DebtRepository();
     }
+    protected toObjectId (_id: string) : Types.ObjectId {
+
+        return Types.ObjectId.createFromHexString(_id)
+    }
 
 
-    getAllDebtBetweenUsesrs(userId1:any,userId2:any,cb:(err:iErrorObject,result:any)=>any):void/*iDebt[]*/{
+    public getAllDebtBetweenUsesrs(userId1:any,userId2:any,cb:(err:iErrorObject,result:any)=>any):void/*iDebt[]*/{
 
+
+        this._debtRepository.find( { $or : [
+                { $and : [ { "debtor" : this.toObjectId(userId1) }, { "debtee" : this.toObjectId(userId2)} ] },
+                { $and : [ { "debtor" :this.toObjectId(userId2) }, { "debtee" :this.toObjectId(userId1) } ] }
+            ] },cb );
 
     }
-    getUserDebts(userId1:any, cb:(err:iErrorObject,result:any)=>any):void/*iDebt[]*/{
-
-
-    }
-    public getSettledDebtsForApprove(userId:number,cb:(err:iErrorObject,result:any)=>any):void/*iDebt[]*/{
-
+    public getUserDebts(userId1:any, callback:(err:iErrorObject,result:any)=>any):void{
+        //console.log("TEST " +userId1);
+        this._debtRepository.find( { $and:[ {$or : [ { "debtor": this.toObjectId(userId1) },  { "debtee": this.toObjectId(userId1) } ] },{"state":DebtState.UnSettled}] },callback );
 
     }
-    create (item: iDebtModel, callback: (error: any, result: any) => void) {
+    public getSettledDebtsForApprove(userId:string,callback:(err:iErrorObject,result:any)=>any):void/*iDebt[]*/{
+
+        this._debtRepository.find( { $and:[ { "debtee": this.toObjectId(userId)},{"state":DebtState.UnApproved}] }, callback );
+
+    }
+    public approveDebts(debtIds:string[],userId:string,callback: (error: any, result: any) => void):void{
+        let debtsToApprove = this.castToObjectIdArray(debtIds);
+        this._debtRepository.updateAll( { $and:[ {"_id" : { "$in" : debtsToApprove } } ,{ "debtee": this.toObjectId(userId)},{"state":DebtState.UnApproved} ] },
+            {"state":DebtState.Settled},
+            {multi:true , upsert:false},
+            callback);
+    }
+
+    public settleDebts(debtIds:string[],userId:string,callback: (error: any, result: any) => void):void{
+        let debtsToSettle=this.castToObjectIdArray(debtIds);
+        this._debtRepository.updateAll( { $and:[ {"_id" : { "$in" : debtsToSettle } } ,{ "debtor": this.toObjectId(userId)},{"state":DebtState.UnSettled} ] },
+            {"state":DebtState.UnApproved},
+            {multi:true , upsert:false},
+            callback);
+    }
+    private castToObjectIdArray(ids:string[]):Types.ObjectId[]{
+        let objIds:Types.ObjectId[]=[];
+        for(let  objId in ids){
+
+            objIds.push(this.toObjectId(ids[objId]));
+
+        }
+        return objIds;
+    }
+
+
+    public create (item: iDebtModel, callback: (error: any, result: any) => void) {
 
 
 
         this._debtRepository.create(item, callback);
     }
 
-    retrieve (callback: (error: any, result: any) => void) {
+    public retrieve (callback: (error: any, result: any) => void) {
         this._debtRepository.retrieve(callback);
     }
 
-    update (_id: string, item: iDebtModel, callback: (error: any, result: any) => void) {
+    public update (_id: string, item: iDebtModel, callback: (error: any, result: any) => void) {
 
         this._debtRepository.findById(_id, (err, res) => {
             if(err) callback(err, res);
@@ -67,7 +106,8 @@ export class DebtModel {
         let myDebts:iDebt[]=[];
         let debtsToMe:iDebt[]=[];
         for(let i in debts){
-            if(debts[i].debtor._id===userId)   debtsToMe.push(debts[i]);
+
+            if(debts[i].debtee._id==userId)   debtsToMe.push(debts[i]);
             else myDebts.push(debts[i]);
 
         }

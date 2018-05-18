@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/middlewares/login/registerMw.ts" line="46" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c1ea8fa1-323c-4b5e-9b8a-f86cf050ee6c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/debtRepository.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/repositoryBase.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/userRepository.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/db.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/debtSchema.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/userSchema.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/middlewares/debt/appendSelectedUsers.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/middlewares/generic/apiAuthMw.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/middlewares/generic/conditionalRedirect.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/middlewares/generic/mainredirectMw.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/middlewares/generic/sendStatus.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/seed/seed.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/SelectAllCheckbox.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/errorbox.ejs" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/MyResponseExtension.d.ts-1e74bc745b6a7e04e11d26008a33dfd6" afterPath="$PROJECT_DIR$/.tscache/app/hashes/MyResponseExtension.d.ts-1e74bc745b6a7e04e11d26008a33dfd6" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/Server.ts-6c2457f8d2ec445121180785c06fec52" afterPath="$PROJECT_DIR$/.tscache/app/hashes/Server.ts-6c2457f8d2ec445121180785c06fec52" />
+      <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/approveSettleDebtMw.ts-e1c3d3cb3cb41b7d6cd91af198442d21" afterPath="$PROJECT_DIR$/.tscache/app/hashes/approveSettleDebtMw.ts-e1c3d3cb3cb41b7d6cd91af198442d21" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/authMw.ts-515eb3c77824b270d34973a217567015" afterPath="$PROJECT_DIR$/.tscache/app/hashes/authMw.ts-515eb3c77824b270d34973a217567015" />
+      <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/checkNewDebtFormMw.ts-bf3e7566be66c42177809b26c2873159" afterPath="$PROJECT_DIR$/.tscache/app/hashes/checkNewDebtFormMw.ts-bf3e7566be66c42177809b26c2873159" />
+      <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/createNewDebtMw.ts-de916f87f991f19e1d23aa3d828e2330" afterPath="$PROJECT_DIR$/.tscache/app/hashes/createNewDebtMw.ts-de916f87f991f19e1d23aa3d828e2330" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/debtModel.ts-295a2464106e4a84ea2229280cb37e08" afterPath="$PROJECT_DIR$/.tscache/app/hashes/debtModel.ts-295a2464106e4a84ea2229280cb37e08" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/debtRoutes.ts-b06bc2b103ca2f3c065446cbaf17b9bd" afterPath="$PROJECT_DIR$/.tscache/app/hashes/debtRoutes.ts-b06bc2b103ca2f3c065446cbaf17b9bd" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/getDebtDetailsMw.ts-4c71d17ff212c722f1bd14bcd20355a6" afterPath="$PROJECT_DIR$/.tscache/app/hashes/getDebtDetailsMw.ts-4c71d17ff212c722f1bd14bcd20355a6" />
@@ -21,47 +29,80 @@
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/iDebt.ts-d7dc521e362d8825f851753ff97d9245" afterPath="$PROJECT_DIR$/.tscache/app/hashes/iDebt.ts-d7dc521e362d8825f851753ff97d9245" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/iDebtPair.ts-f331741c3b050ba7528f64f7e229a0ae" afterPath="$PROJECT_DIR$/.tscache/app/hashes/iDebtPair.ts-f331741c3b050ba7528f64f7e229a0ae" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/iUser.ts-37df1871e27f9155ad233b9268636436" afterPath="$PROJECT_DIR$/.tscache/app/hashes/iUser.ts-37df1871e27f9155ad233b9268636436" />
+      <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/inverseAuthMw.ts-1dcd2efd554efbb1ff08f0261b559065" afterPath="$PROJECT_DIR$/.tscache/app/hashes/inverseAuthMw.ts-1dcd2efd554efbb1ff08f0261b559065" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/jsonRespMw.ts-043b88b4f69757a7e3996017f1130bf6" afterPath="$PROJECT_DIR$/.tscache/app/hashes/jsonRespMw.ts-043b88b4f69757a7e3996017f1130bf6" />
+      <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/loginMw.ts-9c2a559b0cb22188b1a674e109a32c4d" afterPath="$PROJECT_DIR$/.tscache/app/hashes/loginMw.ts-9c2a559b0cb22188b1a674e109a32c4d" />
+      <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/outsideRoutes.ts-2535fedc2bc428488d24f2cfdddcfa5e" afterPath="$PROJECT_DIR$/.tscache/app/hashes/outsideRoutes.ts-2535fedc2bc428488d24f2cfdddcfa5e" />
+      <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/registerMw.ts-a34f0f69000d96829adb2baa3a62b0c1" afterPath="$PROJECT_DIR$/.tscache/app/hashes/registerMw.ts-a34f0f69000d96829adb2baa3a62b0c1" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/renderMw.ts-ea1a21d306c44397b2c3d7947443e104" afterPath="$PROJECT_DIR$/.tscache/app/hashes/renderMw.ts-ea1a21d306c44397b2c3d7947443e104" />
+      <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/settleDebtMw.ts-0e27c0536dc11ba32b18473256316eb4" afterPath="$PROJECT_DIR$/.tscache/app/hashes/settleDebtMw.ts-0e27c0536dc11ba32b18473256316eb4" />
       <change beforePath="$PROJECT_DIR$/.tscache/app/hashes/userModel.ts-f43dc3c9ccaa520c18f677c34a6613a3" afterPath="$PROJECT_DIR$/.tscache/app/hashes/userModel.ts-f43dc3c9ccaa520c18f677c34a6613a3" />
+      <change beforePath="$PROJECT_DIR$/dist/Repository/DebtRepository.js" afterPath="$PROJECT_DIR$/dist/Repository/DebtRepository.js" />
+      <change beforePath="$PROJECT_DIR$/dist/Repository/RepositoryBase.js" afterPath="$PROJECT_DIR$/dist/Repository/RepositoryBase.js" />
+      <change beforePath="$PROJECT_DIR$/dist/Repository/userRepository.js" afterPath="$PROJECT_DIR$/dist/Repository/userRepository.js" />
+      <change beforePath="$PROJECT_DIR$/dist/Server.js" afterPath="$PROJECT_DIR$/dist/Server.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/debt/approveSettleDebtMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/debt/approveSettleDebtMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/debt/checkNewDebtFormMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/debt/checkNewDebtFormMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/debt/createNewDebtMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/debt/createNewDebtMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/debt/getDebtDetailsMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/debt/getDebtDetailsMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/debt/getFilteredUsers.js" afterPath="$PROJECT_DIR$/dist/middlewares/debt/getFilteredUsers.js" />
       <change beforePath="$PROJECT_DIR$/dist/middlewares/debt/getMyDebtsMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/debt/getMyDebtsMw.js" />
-      <change beforePath="$PROJECT_DIR$/dist/middlewares/generic/auth.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/middlewares/generic/render.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/debt/getSettleIntentsMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/debt/getSettleIntentsMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/debt/settleDebtMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/debt/settleDebtMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/generic/authMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/generic/authMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/generic/inverseAuthMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/generic/inverseAuthMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/generic/jsonRespMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/generic/jsonRespMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/generic/renderMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/generic/renderMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/login/loginMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/login/loginMw.js" />
+      <change beforePath="$PROJECT_DIR$/dist/middlewares/login/registerMw.js" afterPath="$PROJECT_DIR$/dist/middlewares/login/registerMw.js" />
       <change beforePath="$PROJECT_DIR$/dist/model_Interfaces/iDebt.js" afterPath="$PROJECT_DIR$/dist/model_Interfaces/iDebt.js" />
-      <change beforePath="$PROJECT_DIR$/dist/model_Interfaces/iUser.js" afterPath="$PROJECT_DIR$/dist/model_Interfaces/iUser.js" />
       <change beforePath="$PROJECT_DIR$/dist/models/debtModel.js" afterPath="$PROJECT_DIR$/dist/models/debtModel.js" />
       <change beforePath="$PROJECT_DIR$/dist/models/userModel.js" afterPath="$PROJECT_DIR$/dist/models/userModel.js" />
+      <change beforePath="$PROJECT_DIR$/dist/models/userSchema.js" afterPath="$PROJECT_DIR$/dist/models/userSchema.js" />
       <change beforePath="$PROJECT_DIR$/dist/routes/debtRoutes.js" afterPath="$PROJECT_DIR$/dist/routes/debtRoutes.js" />
-      <change beforePath="$PROJECT_DIR$/dist/typings/iDebtPair.js" afterPath="$PROJECT_DIR$/dist/typings/iDebtPair.js" />
+      <change beforePath="$PROJECT_DIR$/dist/routes/outsideRoutes.js" afterPath="$PROJECT_DIR$/dist/routes/outsideRoutes.js" />
+      <change beforePath="$PROJECT_DIR$/dist/views/Approve_settle.ejs" afterPath="$PROJECT_DIR$/dist/views/Approve_settle.ejs" />
+      <change beforePath="$PROJECT_DIR$/dist/views/Debt_details.ejs" afterPath="$PROJECT_DIR$/dist/views/Debt_details.ejs" />
+      <change beforePath="$PROJECT_DIR$/dist/views/Home.ejs" afterPath="$PROJECT_DIR$/dist/views/Home.ejs" />
+      <change beforePath="$PROJECT_DIR$/dist/views/Login.ejs" afterPath="$PROJECT_DIR$/dist/views/Login.ejs" />
       <change beforePath="$PROJECT_DIR$/dist/views/New_debt.ejs" afterPath="$PROJECT_DIR$/dist/views/New_debt.ejs" />
+      <change beforePath="$PROJECT_DIR$/dist/views/Register.ejs" afterPath="$PROJECT_DIR$/dist/views/Register.ejs" />
+      <change beforePath="$PROJECT_DIR$/dist/views/footer.ejs" afterPath="$PROJECT_DIR$/dist/views/footer.ejs" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/Server.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/debtRepository.ts" afterPath="$PROJECT_DIR$/src/Repository/debtRepository.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/repositoryBase.ts" afterPath="$PROJECT_DIR$/src/Repository/repositoryBase.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/userRepository.ts" afterPath="$PROJECT_DIR$/src/Repository/userRepository.ts" />
       <change beforePath="$PROJECT_DIR$/src/Server.ts" afterPath="$PROJECT_DIR$/src/Server.ts" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/debt/createNewDebtMw.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/debt/approveSettleDebtMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/debt/approveSettleDebtMw.ts" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/debt/checkNewDebtFormMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/debt/checkNewDebtFormMw.ts" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/debt/createNewDebtMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/debt/createNewDebtMw.ts" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.ts" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/debt/getFilteredUsers.ts" afterPath="$PROJECT_DIR$/src/middlewares/debt/getFilteredUsers.ts" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/debt/getMyDebtsMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/debt/getMyDebtsMw.ts" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/debt/getSettleIntentsMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/debt/getSettleIntentsMw.ts" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/debt/settleDebtMw.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/generic/authMw.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/debt/settleDebtMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/debt/settleDebtMw.ts" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/generic/authMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/generic/authMw.ts" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/generic/checkRepositoryMw.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/generic/inverseAuthMw.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/generic/inverseAuthMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/generic/inverseAuthMw.ts" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/generic/jsonRespMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/generic/jsonRespMw.ts" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/generic/renderMw.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/generic/renderMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/generic/renderMw.ts" />
-      <change beforePath="$PROJECT_DIR$/src/model_Interfaces/iDebt.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/login/loginMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/login/loginMw.ts" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/login/registerMw.ts" afterPath="$PROJECT_DIR$/src/middlewares/login/registerMw.ts" />
       <change beforePath="$PROJECT_DIR$/src/model_Interfaces/iDebt.ts" afterPath="$PROJECT_DIR$/src/model_Interfaces/iDebt.ts" />
       <change beforePath="$PROJECT_DIR$/src/model_Interfaces/iUser.ts" afterPath="$PROJECT_DIR$/src/model_Interfaces/iUser.ts" />
-      <change beforePath="$PROJECT_DIR$/src/models/debtModel.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/models/debtModel.ts" afterPath="$PROJECT_DIR$/src/models/debtModel.ts" />
-      <change beforePath="$PROJECT_DIR$/src/models/userModel.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/models/userModel.ts" afterPath="$PROJECT_DIR$/src/models/userModel.ts" />
-      <change beforePath="$PROJECT_DIR$/src/routes/debtRoutes.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/models/userSchema.ts" afterPath="$PROJECT_DIR$/src/models/userSchema.ts" />
       <change beforePath="$PROJECT_DIR$/src/routes/debtRoutes.ts" afterPath="$PROJECT_DIR$/src/routes/debtRoutes.ts" />
-      <change beforePath="$PROJECT_DIR$/src/typings/MyResponseExtension.d.ts" afterPath="$PROJECT_DIR$/src/typings/MyResponseExtension.d.ts" />
-      <change beforePath="$PROJECT_DIR$/src/typings/iDebtPair.ts" afterPath="$PROJECT_DIR$/src/typings/iDebtPair.ts" />
+      <change beforePath="$PROJECT_DIR$/src/routes/outsideRoutes.ts" afterPath="$PROJECT_DIR$/src/routes/outsideRoutes.ts" />
+      <change beforePath="$PROJECT_DIR$/static/css/general.css" afterPath="$PROJECT_DIR$/static/css/general.css" />
+      <change beforePath="$PROJECT_DIR$/views/Approve_settle.ejs" afterPath="$PROJECT_DIR$/views/Approve_settle.ejs" />
+      <change beforePath="$PROJECT_DIR$/views/Debt_details.ejs" afterPath="$PROJECT_DIR$/views/Debt_details.ejs" />
+      <change beforePath="$PROJECT_DIR$/views/Home.ejs" afterPath="$PROJECT_DIR$/views/Home.ejs" />
+      <change beforePath="$PROJECT_DIR$/views/Login.ejs" afterPath="$PROJECT_DIR$/views/Login.ejs" />
+      <change beforePath="$PROJECT_DIR$/views/New_debt.ejs" afterPath="$PROJECT_DIR$/views/New_debt.ejs" />
+      <change beforePath="$PROJECT_DIR$/views/Register.ejs" afterPath="$PROJECT_DIR$/views/Register.ejs" />
+      <change beforePath="$PROJECT_DIR$/views/footer.ejs" afterPath="$PROJECT_DIR$/views/footer.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,63 +116,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="iUser.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model_Interfaces/iUser.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userSchema.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/userSchema.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="debtRoutes.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="debtRoutes.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/debtRoutes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="302">
+              <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="debtModel.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/debtModel.ts">
+      <file leaf-file-name="getFilteredUsers.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getFilteredUsers.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#3#45#0" expanded="true" />
-                <marker date="1525211079253" expanded="false" signature="2515:2855" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-                <marker date="1525211079253" expanded="false" signature="2898:3238" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-                <marker date="1525211079253" expanded="false" signature="3281:3621" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-                <marker date="1525211079253" expanded="false" signature="3664:4004" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-                <marker date="1525211079253" expanded="false" signature="4047:4387" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userModel.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/userModel.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#1#56#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,38 +139,8 @@
       <file leaf-file-name="getDebtDetailsMw.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="debtSchema.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/debtSchema.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/mongoose/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="239" column="4" lean-forward="false" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -179,11 +149,69 @@
       <file leaf-file-name="getMyDebtsMw.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getMyDebtsMw.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jsonRespMw.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/middlewares/generic/jsonRespMw.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createNewDebtMw.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/middlewares/debt/createNewDebtMw.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outsideRoutes.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/outsideRoutes.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registerMw.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/middlewares/login/registerMw.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="635">
+              <caret line="45" column="67" lean-forward="false" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiAuthMw.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/middlewares/generic/apiAuthMw.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,21 +221,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vertical-ce</find>
-      <find>Teszt Elek</find>
-      <find>Pista Jóska&lt;/a&gt;</find>
-      <find>Pista Jóska</find>
-      <find>&quot;css/</find>
-      <find>renderMw</find>
       <find>objeRep</find>
       <find>authMw</find>
       <find>routes</find>
@@ -224,6 +246,20 @@
       <find>_userRepository</find>
       <find>mongoose.</find>
       <find>User</find>
+      <find>parse</find>
+      <find>cons</find>
+      <find>body</find>
+      <find>sess</find>
+      <find>log</find>
+      <find>chec</find>
+      <find>toApprove</find>
+      <find>result</find>
+      <find>$in</find>
+      <find>selectedUsers</find>
+      <find>res.</find>
+      <find>res.se</find>
+      <find>req.body</find>
+      <find>getFilteredUsers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -232,57 +268,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/middlewares/debt/approveSettleDebtMw.ts" />
-        <option value="$PROJECT_DIR$/src/model_Interfaces/iMyDebt.ts" />
-        <option value="$PROJECT_DIR$/src/model_Interfaces/iDebtDetail.ts" />
-        <option value="$PROJECT_DIR$/static/Debt_details.html" />
-        <option value="$PROJECT_DIR$/src/middlewares/debt/checkNewDebtFormMw.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/debt/createNewDebtMw.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/debt/settleDebtMw.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/generic/inverseAuthMw.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/login/registerMw.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/login/checkRegisterFormMw.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/login/loginMw.ts" />
-        <option value="$PROJECT_DIR$/src/routes/outsideRoutes.ts" />
-        <option value="$PROJECT_DIR$/src/routes/route.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/generic/checkRepositoryMw.ts" />
-        <option value="$PROJECT_DIR$/src/typings/iErrorObject.ts" />
-        <option value="$PROJECT_DIR$/bin/www.js" />
-        <option value="$PROJECT_DIR$/views/footer.ejs" />
-        <option value="$PROJECT_DIR$/views/Index.ejs" />
-        <option value="$PROJECT_DIR$/views/Login.ejs" />
+        <option value="$PROJECT_DIR$/src/models/userSchema.ts" />
         <option value="$PROJECT_DIR$/views/Register.ejs" />
+        <option value="$PROJECT_DIR$/src/middlewares/generic/renderMw.ts" />
+        <option value="$PROJECT_DIR$/views/errorbox.ejs" />
+        <option value="$PROJECT_DIR$/views/Login.ejs" />
+        <option value="$PROJECT_DIR$/dist/middlewares/login/loginMw.js" />
+        <option value="$PROJECT_DIR$/src/typings/RequestExtension.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/generic/inverseAuthMw.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/generic/authMw.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/generic/mainredirectMw.ts" />
+        <option value="$PROJECT_DIR$/dist/middlewares/debt/getDebtDetailsMw.js" />
+        <option value="$PROJECT_DIR$/src/model_Interfaces/iDebt.ts" />
+        <option value="$PROJECT_DIR$/dist/middlewares/debt/getSettleIntentsMw.js" />
+        <option value="$PROJECT_DIR$/src/typings/MyRequestExtension.ts" />
         <option value="$PROJECT_DIR$/views/header.ejs" />
-        <option value="$PROJECT_DIR$/src/typings/debtPair.ts" />
+        <option value="$PROJECT_DIR$/views/footer.ejs" />
+        <option value="$PROJECT_DIR$/static/js/SelectAllCheckbox.js" />
+        <option value="$PROJECT_DIR$/src/Server.ts" />
         <option value="$PROJECT_DIR$/views/Approve_settle.ejs" />
         <option value="$PROJECT_DIR$/views/Debt_details.ejs" />
-        <option value="$PROJECT_DIR$/views/Home.ejs" />
-        <option value="$PROJECT_DIR$/views/New_debt.ejs" />
-        <option value="$PROJECT_DIR$/src/models/userScheme.ts" />
-        <option value="$PROJECT_DIR$/src/models/RepositoryBase.ts" />
-        <option value="$PROJECT_DIR$/src/Repository/heroRepository.ts" />
-        <option value="$PROJECT_DIR$/src/Repository/RepositoryBase.ts" />
-        <option value="$PROJECT_DIR$/src/db.ts" />
-        <option value="$PROJECT_DIR$/src/routes/debtRoutes.ts" />
-        <option value="$PROJECT_DIR$/src/Repository/repositoryBase.ts" />
-        <option value="$PROJECT_DIR$/src/typings/MyResponseExtension.d.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/debt/getFilteredUsers.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.ts" />
         <option value="$PROJECT_DIR$/src/middlewares/debt/getSettleIntentsMw.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/generic/authMw.ts" />
-        <option value="$PROJECT_DIR$/src/Server.ts" />
-        <option value="$PROJECT_DIR$/src/middlewares/generic/renderMw.ts" />
+        <option value="$PROJECT_DIR$/views/Home.ejs" />
+        <option value="$PROJECT_DIR$/static/css/general.css" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/checkNewDebtFormMw.ts" />
+        <option value="$PROJECT_DIR$/dist/middlewares/debt/getFilteredUsers.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/generic/conditionalRedirect.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/getFilteredUsers.ts" />
+        <option value="$PROJECT_DIR$/src/Repository/repositoryBase.ts" />
+        <option value="$PROJECT_DIR$/views/New_debt.ejs" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/appendSelectedUsers.ts" />
+        <option value="$PROJECT_DIR$/src/test/seed/seed.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/approveSettleDebtMw.ts" />
         <option value="$PROJECT_DIR$/src/middlewares/generic/jsonRespMw.ts" />
-        <option value="$PROJECT_DIR$/src/Repository/debtRepository.ts" />
-        <option value="$PROJECT_DIR$/src/model_Interfaces/iUser.ts" />
-        <option value="$PROJECT_DIR$/src/Repository/userRepository.ts" />
-        <option value="$PROJECT_DIR$/src/typings/iDebtPair.ts" />
-        <option value="$PROJECT_DIR$/src/model_Interfaces/iDebt.ts" />
-        <option value="$PROJECT_DIR$/src/models/debtModel.ts" />
-        <option value="$PROJECT_DIR$/src/models/userModel.ts" />
+        <option value="$PROJECT_DIR$/dist/middlewares/login/registerMw.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/generic/sendStatus.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/login/registerMw.ts" />
+        <option value="$PROJECT_DIR$/dist/middlewares/generic/apiAuthMw.js" />
+        <option value="$PROJECT_DIR$/dist/middlewares/debt/getMyDebtsMw.js" />
         <option value="$PROJECT_DIR$/src/middlewares/debt/getMyDebtsMw.ts" />
-        <option value="$PROJECT_DIR$/src/models/debtSchema.ts" />
-        <option value="$PROJECT_DIR$/src/models/userSchema.ts" />
+        <option value="$PROJECT_DIR$/dist/models/debtModel.js" />
+        <option value="$PROJECT_DIR$/src/models/debtModel.ts" />
+        <option value="$PROJECT_DIR$/src/routes/outsideRoutes.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/settleDebtMw.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/generic/apiAuthMw.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/login/loginMw.ts" />
+        <option value="$PROJECT_DIR$/src/models/userModel.ts" />
+        <option value="$PROJECT_DIR$/src/Repository/userRepository.ts" />
+        <option value="$PROJECT_DIR$/src/Repository/debtRepository.ts" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/createNewDebtMw.ts" />
+        <option value="$PROJECT_DIR$/src/routes/debtRoutes.ts" />
       </list>
     </option>
   </component>
@@ -297,8 +333,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="width" value="1925" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="-8" />
+    <option name="width" value="1295" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -318,7 +356,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,7 +379,7 @@
               <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="middlewares" type="462c0819:PsiDirectoryNode" />
-              <item name="debt" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
@@ -372,12 +409,60 @@
               <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
               <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="seed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="typings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="db.ts" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Server.ts" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szerveroldali-javascript-hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szerveroldali-javascript-hf" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,7 +492,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.grunt">
+    <configuration name="dev" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
     <configuration name="grunt" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -417,9 +511,14 @@
       <node-interpreter value="project" />
       <envs />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="npm.grunt" />
+      <item index="1" class="java.lang.String" itemvalue="npm.dev" />
+    </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="npm.grunt" />
+        <item index="1" class="java.lang.String" itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -443,28 +542,30 @@
       <workItem from="1524413094509" duration="17582000" />
       <workItem from="1524500135026" duration="9312000" />
       <workItem from="1524761467010" duration="13930000" />
-      <workItem from="1525197197569" duration="14117000" />
+      <workItem from="1525197197569" duration="14705000" />
+      <workItem from="1526310670550" duration="24210000" />
+      <workItem from="1526384491971" duration="33457000" />
+      <workItem from="1526482476440" duration="12526000" />
+      <workItem from="1526554877406" duration="3196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95952000" />
+    <option name="totallyTimeSpent" value="169929000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1925" height="1040" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25841478" sideWeight="0.4892614" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16807166" sideWeight="0.49423394" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4849138" sideWeight="0.5107386" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1679558" sideWeight="0.50576603" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4839779" sideWeight="0.4892614" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16905141" sideWeight="0.49423394" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.48609078" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32356134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720955" sideWeight="0.50576603" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -472,430 +573,422 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.48609078" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32090762" sideWeight="0.5139092" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18008785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901135" sideWeight="0.48609078" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/typings/iDebtPair.js" />
+        <option value="$PROJECT_DIR$/src/db.js" />
+        <option value="$PROJECT_DIR$/src/Repository/userRepository.js" />
+        <option value="$PROJECT_DIR$/src/Repository/RepositoryBase.js" />
+        <option value="$PROJECT_DIR$/src/Repository/DebtRepository.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/login/loginMw.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/login/registerMw.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/generic/authMw.js" />
+        <option value="$PROJECT_DIR$/src/models/userSchema.js" />
+        <option value="$PROJECT_DIR$/src/models/debtModel.js" />
+        <option value="$PROJECT_DIR$/src/models/userModel.js" />
+        <option value="$PROJECT_DIR$/src/models/debtSchema.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/getMyDebtsMw.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/getFilteredUsers.js" />
+        <option value="$PROJECT_DIR$/src/model_Interfaces/iUser.js" />
+        <option value="$PROJECT_DIR$/src/model_Interfaces/iDebt.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/settleDebtMw.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/approveSettleDebtMw.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.js" />
+        <option value="$PROJECT_DIR$/src/middlewares/debt/getSettleIntentsMw.js" />
+        <option value="$PROJECT_DIR$/src/Server.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/middlewares/login/checkRegisterFormMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/login/loginMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/login/registerMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Debt_details.html" />
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.full.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-487">
-          <caret line="16059" column="5" lean-forward="false" selection-start-line="16059" selection-start-column="5" selection-end-line="16059" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="434" column="4" lean-forward="false" selection-start-line="434" selection-start-column="4" selection-end-line="434" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Approve_settle.html" />
-    <entry file="file://$PROJECT_DIR$/views/Home.html" />
-    <entry file="file://$PROJECT_DIR$/bin/www.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Register.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/general.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Approve_settle.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Login.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Debt_details.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="121" column="37" lean-forward="false" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Home.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/New_debt.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/outsideRoutes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/checkRepositoryMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/middlewares/generic/inverseAuthMw.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="61" lean-forward="false" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/RepositoryBase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/approveSettleDebtMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/checkNewDebtFormMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/authMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/renderMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/jsonRespMw.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/debtRepository.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#65#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="833">
+          <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/repositoryBase.ts">
+    <entry file="file://$PROJECT_DIR$/src/db.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/DebtRepository.js">
+    <entry file="file://$PROJECT_DIR$/src/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/createNewDebtMw.ts">
+    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="95" lean-forward="false" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/general.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/checkNewDebtFormMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/middlewares/debt/getFilteredUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/mainredirectMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/middlewares/generic/conditionalRedirect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/middlewares/generic/authMw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/middlewares/debt/createNewDebtMw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/conditionalRedirect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/New_debt.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/renderMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getFilteredUsers.ts">
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/mongoose/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+        <state relative-caret-position="24038">
+          <caret line="1424" column="37" lean-forward="false" selection-start-line="1424" selection-start-column="18" selection-end-line="1424" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/seed/seed.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/approveSettleDebtMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getSettleIntentsMw.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        <state relative-caret-position="51">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/checkRepositoryMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/appendSelectedUsers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/response.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="766" column="9" lean-forward="false" selection-start-line="766" selection-start-column="9" selection-end-line="766" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/middlewares/generic/sendStatus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/middlewares/login/registerMw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/sendStatus.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/middlewares/generic/apiAuthMw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="94" column="4" lean-forward="false" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/models/debtModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/middlewares/debt/getMyDebtsMw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Approve_settle.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="55" column="91" lean-forward="false" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Debt_details.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="38" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/middlewares/debt/settleDebtMw.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        <state relative-caret-position="187">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/typings/MyResponseExtension.d.ts">
+    <entry file="file://$PROJECT_DIR$/src/Repository/repositoryBase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="49" column="2" lean-forward="false" selection-start-line="49" selection-start-column="2" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/authMw.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/typings/iErrorObject.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/typings/iDebtPair.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_Interfaces/iDebt.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/userRepository.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_Interfaces/iUser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/debtModel.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#3#45#0" expanded="true" />
-            <marker date="1525211079253" expanded="false" signature="2515:2855" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-            <marker date="1525211079253" expanded="false" signature="2898:3238" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-            <marker date="1525211079253" expanded="false" signature="3281:3621" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-            <marker date="1525211079253" expanded="false" signature="3664:4004" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-            <marker date="1525211079253" expanded="false" signature="4047:4387" ph="{&quot;comment&quot;: &quot;Bevásárlás&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/mongoose/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="239" column="4" lean-forward="false" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/userModel.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="595">
+          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.ts">
+    <entry file="file://$PROJECT_DIR$/src/middlewares/login/loginMw.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="343">
+          <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/debtModel.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="59" column="81" lean-forward="false" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/debtRepository.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/jsonRespMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getMyDebtsMw.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/debtSchema.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="68">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/userSchema.ts">
+    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/createNewDebtMw.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="629">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/generic/apiAuthMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getDebtDetailsMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/outsideRoutes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/login/registerMw.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="45" column="67" lean-forward="false" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/debtRoutes.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="302">
+          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middlewares/debt/getFilteredUsers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>

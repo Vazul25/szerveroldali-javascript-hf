@@ -11,12 +11,17 @@ interface Read<T> {
 interface Write<T> {
     create: (item:T, callback: (error: any, result: any ) => void) => void;
     update:(_id: Types.ObjectId, item:T, callback: (error: any, result: any)=> void) => void ;
+    updateAll:(cond: Object, updateTo: Object, options: Object,callback: (error: any, result: any) => void) => void ;
     delete: (_id: string, callback: (error: any, result: any) => void) => void;
 
 }
 export class RepositoryBase<T extends Document> implements Read<T>, Write<T> {
 
-    private _model: Model<Document>;
+    updateAll (cond: Object, updateTo: Object, options: Object, callback: (error: any, result: any) => void){
+        this._model.update(cond,updateTo,options,callback);
+    }
+
+    protected _model: Model<Document>;
 
     constructor (schemaModel: Model<Document>) {
         this._model = schemaModel;
@@ -36,6 +41,7 @@ export class RepositoryBase<T extends Document> implements Read<T>, Write<T> {
 
     }
 
+
     delete (_id: string, callback:(error: any, result: any) => void) {
         this._model.remove({_id: this.toObjectId(_id)}, (err) => callback(err, null));
 
@@ -48,9 +54,13 @@ export class RepositoryBase<T extends Document> implements Read<T>, Write<T> {
     findById (_id: string, callback: (error: any, result: T) => void) {
         this._model.findById( _id, callback);
     }
+    findOne (cond: any, callback: (error: any, result: T) => void) {
+        this._model.findOne( cond, callback);
+    }
 
 
-    private toObjectId (_id: string) : Types.ObjectId {
+
+    protected toObjectId (_id: string) : Types.ObjectId {
         return Types.ObjectId.createFromHexString(_id)
     }
 

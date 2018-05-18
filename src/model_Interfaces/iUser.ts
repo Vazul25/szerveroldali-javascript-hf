@@ -5,8 +5,10 @@ export interface iUser{
     fullName:string;
     nickName:string;
     email:string;
-    password:String,
+    password:String;
     birthday:Date;
+    purl:string;
+
 
 }
 export interface iUserModel extends iUser, Document {

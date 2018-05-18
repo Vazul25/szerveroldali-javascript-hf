@@ -11,7 +11,7 @@ export interface iDebt{
     state:DebtState;
 
 }
-enum DebtState{
+export enum DebtState{
     UnSettled=0,
     UnApproved = 1,
     Settled=2

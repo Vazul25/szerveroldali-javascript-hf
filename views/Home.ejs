@@ -1,7 +1,7 @@
 
 <%- include('header') %>
 
-<%  console.log(debts.myDebts); console.log(debts.debtsToMe);  %>
+<%  /*console.log(debts.myDebts); console.log(debts.debtsToMe);*/  %>
 <div class=" ">
 
     <ul class="nav nav-tabs">
@@ -21,25 +21,25 @@
                     <th>Akiknek tartozok</th>
                     <th>Összeg</th>
                 </tr>
+
                 </thead>
                 <tbody>
 
                 <%
 
-                for (let i in debts.debtsToMe) {
-                    let item = debts.debtsToMe[i];
-
+                for (let i in debts.myDebts)
+                {
+                    let item = debts.myDebts[i];
                 %>
                 <tr>
                     <td><%=i%></td>
-                    <td><a href="Details/<%=item.debtor.id%>"> <%=item.debtee.fullName%></a></td>
+                    <td><a href="Details/<%=item.debtee.id%>"> <%=item.debtee.fullName%></a></td>
                     <td><%=item.sum%> Ft</td>
                 </tr>
                 <% } %>
-
                 </tbody>
             </table>
-            <div class="row  text-center"> Összesen: <%=debts.debtsToMe.map(item => item.sum).reduce((prev, next) => prev + next);%> Ft</div>
+            <div class="row  text-center"> Összesen:<%if(debts.myDebts!=""){%> <%=debts.myDebts.map(item => item.sum).reduce((prev, next) => prev + next);%> Ft<%}%> </div>
         </div>
         <div class="col-md-6">
 
@@ -51,24 +51,25 @@
                     <th>Összeg</th>
                 </tr>
                 </thead>
+
                 <tbody>
 
                 <%
 
-                for (let i in debts.myDebts)
-                {
-                    let item = debts.myDebts[i];
-                    %>
+                for (let i in debts.debtsToMe) {
+                    let item = debts.debtsToMe[i];
+
+                %>
                 <tr>
                     <td><%=i%></td>
-                    <td><a href="Details/<%=item.debtee.id%>"> <%=item.debtee.fullName%></a></td>
+                    <td><a href="Details/<%=item.debtor.id%>"> <%=item.debtor.fullName%></a></td>
                     <td><%=item.sum%> Ft</td>
                 </tr>
                 <% } %>
-                </tbody>
 
+                </tbody>
             </table>
-            <div class="row  text-center"> Összesen: <%=debts.myDebts.map(item => item.sum).reduce((prev, next) => prev + next);%> Ft</div>
+            <div class="row  text-center"> Összesen:<%if(debts.debtsToMe!=""){%> <%=debts.debtsToMe.map(item => item.sum).reduce((prev, next) => prev + next);%>Ft<%}%> </div>
 
         </div>
     </div>

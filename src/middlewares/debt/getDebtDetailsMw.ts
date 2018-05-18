@@ -2,26 +2,40 @@ import {NextFunction, Request   } from "express";
 import {DebtModel} from "../../models/debtModel";
 
 import {Response} from "../../typings/MyResponseExtension"
+import {UserModel} from "../../models/userModel";
+
 
 //Lekéri a tartozásokat részletező oldalhoz a 2 felhasználó közti összes tartozást
 var requireOption = require('../generic/checkRepositoryMw').requireOption;
 module.exports = function (objectRepository:any) {
     var debtModel:DebtModel = requireOption(objectRepository, 'debtModel');
-    return function (req: Request, res: Response, next: NextFunction) {
+    var userModel:UserModel = requireOption(objectRepository, 'userModel');
+    return function (req, res: Response, next: NextFunction) {
+        userModel.findOne({"_id":req.params.id},function (err,result) {
+            //console.log(req.params);
 
-        debtModel.getAllDebtBetweenUsesrs(
-            0,
-            req.params.userId2,
-            function (err, result) {
-            if (err) {
+            res.tpl.usersDetails=result;
+            debtModel.getAllDebtBetweenUsesrs(
+                req.session.userId,
+                req.params.id,
+                function (err, result) {
+                    if (err || !result) {
+                        console.log(err);
+                        console.log("error happened");
+                        res.tpl.error.push("db error with geting the details")
+                        res.tpl.debts={myDebts:[],debtsToMe:[]};
+                        return next()
+                    }
 
-                return res.redirect('/home/')
-            }
-                let debts=debtModel.splitDebts(res.tpl.userId,result);
-                res.tpl.debts = debts;
+                    let debts=debtModel.splitDebts( req.session.userId,result);
+                    res.tpl.debts = debts;
+                    return next();
 
-            return next();
-        });
+
+
+                });
+        } )
+
 
     };
 }

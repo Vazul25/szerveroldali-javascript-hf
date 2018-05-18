@@ -10,7 +10,8 @@ exports.UserSchema = new mongoose_1.Schema({
     email: String,
     birthday: Date,
     password: String,
-    createdAt: Date
+    createdAt: Date,
+    purl: String
 });
 exports.UserSchema.pre("save", function (next) {
     let now = new Date();

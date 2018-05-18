@@ -8,6 +8,15 @@ class DebtRepository extends RepositoryBase_1.RepositoryBase {
         super(debtSchema_1.DebtSchemaModel);
         this._userRepository = userRepository_1.UserRepository;
     }
+    find(cond, callback) {
+        this._model.find(cond).populate("debtor", "-password").populate("debtee", "-password").exec(callback);
+    }
+    findById(_id, callback) {
+        this._model.findById(_id).populate("debtor", "-password").populate("debtee", "-password").exec(callback);
+    }
+    findOne(cond, callback) {
+        this._model.findOne(cond).populate("debtor", "-password").populate("debtee", "-password").exec(callback);
+    }
 }
 exports.DebtRepository = DebtRepository;
 Object.seal(DebtRepository);

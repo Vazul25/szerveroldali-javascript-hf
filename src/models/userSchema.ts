@@ -13,7 +13,8 @@ export var UserSchema: any = new Schema({
     email:String,
     birthday:Date,
     password:String,
-    createdAt: Date
+    createdAt: Date,
+    purl:String
 });
 UserSchema.pre("save", function(next) {
     let now = new Date();

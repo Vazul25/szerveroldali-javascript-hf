@@ -1,47 +1,34 @@
-import {NextFunction, Request  } from "express";
-import {Response} from "../../typings/MyResponseExtension"
+import {NextFunction  } from "express";
+import {Response} from "../../typings/MyResponseExtension";
 import {DebtModel} from "../../models/debtModel";
 import {iUserModel} from "../../model_Interfaces/iUser";
 import {UserSchemaModel} from "../../models/userSchema";
 import {UserModel} from "../../models/userModel";
+import {iDebt} from "../../model_Interfaces/iDebt";
+import {iDebtPair} from "../../typings/iDebtPair";
 //Lekéri a főoldalhoz a tartozásokat
 
 var requireOption = require('../generic/checkRepositoryMw').requireOption;
 module.exports = function (objectRepository:any) {
     var debtModel :DebtModel = requireOption(objectRepository, 'debtModel');
-    var userModel :UserModel= requireOption(objectRepository, 'userModel');
-    return function (req: Request, res: Response, next: NextFunction) {
-        let item  =  new UserSchemaModel();
+    return function (req, res: Response, next: NextFunction) {
+        console.log(req.session.userId);
+       debtModel.getUserDebts(
 
-
-            item.email='mock@gmail.com';
-            item.fullName="Test Elek";
-            item.createdAt= new Date();
-            item.nickName='Test';
-            item.birthday=new Date();
-            item.password="AsDasd" ;
-
-
-
-        userModel.create(item,function (err,result) {
-            console.log(result);
-            console.log(err);
-            console.log("Created?");
-        });
-     /*   debtModel.getUserDebts(
-            res.tpl.userId,
-            function (err, result:iDebt[]) {
-                if (err) {
-
+          req.session.userId,
+            function (err, result) {
+                if (err ||!result) {
+                    res.tpl.debts={myDebts:[],debtsToMe:[]}
                     return res.redirect('/home/')
                 }
-                let    debts=debtModel.splitDebts(res.tpl.userId,result);
+                //console.log(result);
+                let    debts=debtModel.splitDebts(req.session.userId,result);
 
                 res.tpl.debts = debts;
 
 
                 return next();
-            });*/
+            });
 
     };
 }

@@ -7,17 +7,20 @@ var requireOption = require('../generic/checkRepositoryMw').requireOption;
 module.exports = function (objectRepository:any) {
     var userModel: UserModel = requireOption(objectRepository, 'userModel');
     return function (req: Request, res: Response, next: NextFunction) {
+        let filter:Object={};
+        if(  req.body.filter)
+            filter = {"fullName": {$regex: req.body.filter, $options:"i"}}
 
-        userModel.filter(
-            req.query.filter,
 
+        userModel.find(filter ,
             function (err, result) {
-                if (err) {
-
-                    return res.redirect('/home/')
+                if (err||!result) {
+                    res.tpl.users=[];
+                     console.log(err);
                 }
 
-                res.tpl.users = result;
+
+                else res.tpl.users = result;
 
                 return next();
             });

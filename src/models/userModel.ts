@@ -2,6 +2,8 @@
 import { iUserModel } from "../model_Interfaces/iUser";
 import {UserRepository} from "../Repository/userRepository";
 import {iDebtPair} from "../typings/iDebtPair";
+import {Types} from "mongoose";
+import {DebtState} from "../model_Interfaces/iDebt";
 
 
 
@@ -14,8 +16,19 @@ export class UserModel {
     constructor( ) {
         this._userRepository = new UserRepository();
     }
+    public castToObjectIdArray(ids:string[]):Types.ObjectId[]{
+        let objIds:Types.ObjectId[]=[];
+        for(let  objId in ids){
 
+            objIds.push(Types.ObjectId.createFromHexString(ids[objId]));
 
+        }
+        return objIds;
+    }
+    getAllUser(idList:string[],callback:(error: any, result: any) => void){
+        let userIds=this.castToObjectIdArray(idList);
+        this._userRepository.find( {"_id" : { "$in" : userIds } }, callback);
+    }
     create (item: iUserModel, callback: (error: any, result: any) => void) {
 
 
@@ -44,9 +57,17 @@ export class UserModel {
     findById (_id: string, callback: (error: any, result: iUserModel) => void) {
         this._userRepository.findById(_id, callback);
     }
-    filter(cond:any,callback:any){
+    find(cond:any,callback: (error: any, result: iUserModel) => void){
         this._userRepository.find(cond,callback);
     }
+    findOne(cond:any,callback: (error: any, result: iUserModel) => void){
+        this._userRepository.findOne(cond,callback);
+    }
+    findWithPassword(cond:any,callback: (error: any, result: iUserModel) => void){
+        this._userRepository.findByEmailWithPassword(cond,callback);
+    }
+
+
 
 
 }

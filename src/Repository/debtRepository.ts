@@ -8,6 +8,17 @@ export class DebtRepository extends RepositoryBase<iDebtModel> {
     constructor() {
         super(DebtSchemaModel);
     }
+
+    find (cond: any, callback: (error: any, result: iDebtModel) => void) {
+        this._model.find( cond).populate("debtor","-password").populate("debtee","-password").exec(callback);
+    }
+
+    findById (_id: string, callback: (error: any, result: iDebtModel) => void) {
+        this._model.findById( _id  ).populate("debtor","-password").populate("debtee","-password").exec(callback);
+    }
+    findOne (cond: any, callback: (error: any, result: iDebtModel) => void) {
+        this._model.findOne( cond ).populate("debtor","-password").populate("debtee","-password").exec(callback);
+    }
     /*getAllDebtBetweenUsesrs(userId1:any,userId2:any): DocumentQuery<iDebt[]>{
         this._userRepository.findById(userId1,(err,res)=>{
             if(err) {console.log("ERROR userid1 user not found");cb(err,res);}
