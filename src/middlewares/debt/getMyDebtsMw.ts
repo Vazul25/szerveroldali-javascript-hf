@@ -19,10 +19,9 @@ module.exports = function (objectRepository:any) {
             function (err, result) {
                 if (err ||!result) {
                     res.tpl.debts={myDebts:[],debtsToMe:[]}
-                    return res.redirect('/home/')
                 }
                 //console.log(result);
-                let    debts=debtModel.splitDebts(req.session.userId,result);
+                let debts=debtModel.splitDebts(req.session.userId,result);
 
                 res.tpl.debts = debts;
 

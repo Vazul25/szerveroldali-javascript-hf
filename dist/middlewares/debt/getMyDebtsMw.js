@@ -8,7 +8,6 @@ module.exports = function (objectRepository) {
         debtModel.getUserDebts(req.session.userId, function (err, result) {
             if (err || !result) {
                 res.tpl.debts = { myDebts: [], debtsToMe: [] };
-                return res.redirect('/home/');
             }
             let debts = debtModel.splitDebts(req.session.userId, result);
             res.tpl.debts = debts;

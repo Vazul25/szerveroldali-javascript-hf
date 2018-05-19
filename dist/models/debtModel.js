@@ -37,6 +37,9 @@ class DebtModel {
         }
         return objIds;
     }
+    insertAllDebts(debts, callback) {
+        this._debtRepository.insertMany(debts, callback);
+    }
     create(item, callback) {
         this._debtRepository.create(item, callback);
     }

@@ -11,7 +11,7 @@ class DataAccess {
         this.mongooseConnection.once("open", () => {
             console.log("Connected to mongodb.");
         });
-        this.mongooseInstance = Mongoose.connect('mongodb://localhost:27017/CM6UKU');
+       // this.mongooseInstance = Mongoose.connect('mongodb://localhost:27017/CM6UKU');
         return this.mongooseInstance;
     }
 }

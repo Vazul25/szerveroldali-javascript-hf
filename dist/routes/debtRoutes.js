@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var renderMw = require("../middlewares/generic/renderMw");
 var authMw = require("../middlewares/generic/authMw");
 var approveSettleDebtMw = require("../middlewares/debt/approveSettleDebtMw");
-var checkNewDebtFormMw = require("../middlewares/debt/checkNewDebtFormMw");
 var createNewDebtMw = require("../middlewares/debt/createNewDebtMw");
 var getDebtDetailsMw = require("../middlewares/debt/getDebtDetailsMw");
 var getMyDebtsMw = require("../middlewares/debt/getMyDebtsMw");

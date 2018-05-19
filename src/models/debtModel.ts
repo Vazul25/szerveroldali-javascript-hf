@@ -72,7 +72,12 @@ export class DebtModel {
         return objIds;
     }
 
+    public insertAllDebts (debts: iDebtModel[], callback: (error: any, result: any) => void) {
 
+
+
+        this._debtRepository.insertMany(debts, callback);
+    }
     public create (item: iDebtModel, callback: (error: any, result: any) => void) {
 
 

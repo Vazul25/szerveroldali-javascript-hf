@@ -15,7 +15,6 @@ module.exports = function (objectRepository:any) {
                 function (err, result) {
                     if (err ||!result) {
                         res.tpl.debtstoAppove=[];
-                        return res.redirect('/home/')
                     }
 
 

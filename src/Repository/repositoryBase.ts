@@ -13,7 +13,7 @@ interface Write<T> {
     update:(_id: Types.ObjectId, item:T, callback: (error: any, result: any)=> void) => void ;
     updateAll:(cond: Object, updateTo: Object, options: Object,callback: (error: any, result: any) => void) => void ;
     delete: (_id: string, callback: (error: any, result: any) => void) => void;
-
+    insertMany:(list:T[],callback: (error: any, result: any) => void)=>void;
 }
 export class RepositoryBase<T extends Document> implements Read<T>, Write<T> {
 
@@ -58,7 +58,9 @@ export class RepositoryBase<T extends Document> implements Read<T>, Write<T> {
         this._model.findOne( cond, callback);
     }
 
-
+    insertMany(list:T[],callback: (error: any, result: any) => void){
+        this._model.insertMany(list,callback);
+    }
 
     protected toObjectId (_id: string) : Types.ObjectId {
         return Types.ObjectId.createFromHexString(_id)

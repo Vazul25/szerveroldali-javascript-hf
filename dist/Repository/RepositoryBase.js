@@ -29,6 +29,9 @@ class RepositoryBase {
     findOne(cond, callback) {
         this._model.findOne(cond, callback);
     }
+    insertMany(list, callback) {
+        this._model.insertMany(list, callback);
+    }
     toObjectId(_id) {
         return mongoose_1.Types.ObjectId.createFromHexString(_id);
     }

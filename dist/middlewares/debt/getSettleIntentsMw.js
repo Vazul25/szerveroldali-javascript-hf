@@ -7,7 +7,6 @@ module.exports = function (objectRepository) {
         debtModel.getSettledDebtsForApprove(req.session.userId, function (err, result) {
             if (err || !result) {
                 res.tpl.debtstoAppove = [];
-                return res.redirect('/home/');
             }
             res.tpl.debtsToApprove = result;
             return next();
