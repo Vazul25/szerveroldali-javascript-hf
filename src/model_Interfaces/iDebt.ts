@@ -1,15 +1,18 @@
-interface iDebt{
+import {iUser} from "./iUser";
+
+export interface iDebt{
+    _id:any;
     date:Date;
-    price:number;
+    sum:number;
     debtor:iUser;
     debtee:iUser;
     comment:string;
-    id:number;
+
     state:DebtState;
 
 }
-enum DebtState{
-    UnSetteled=0,
+export enum DebtState{
+    UnSettled=0,
     UnApproved = 1,
-    Approved=2,
+    Settled=2
 }

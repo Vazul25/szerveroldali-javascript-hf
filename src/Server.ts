@@ -1,13 +1,17 @@
-import * as bodyParser from "body-parser";
+var bodyParser = require('body-parser');
 import * as cookieParser from "cookie-parser";
 import * as express from "express";
 import * as path from "path";
-import { NextFunction, Request,Response, Router } from "express";
+import { NextFunction, Request,  Router } from "express";
+var session = require('express-session');
+
+import {Response} from "./typings/MyResponseExtension"
 
 export class Server {
 
     public app: express.Application;
     public  routes:any;
+
     public static bootstrap(): Server {
         return new Server();
     }
@@ -17,32 +21,45 @@ export class Server {
         this.app = express();
         //configure application
         this.config();
-        this.routes=require('./routes/debtRoutes')(this.app);
-        this.routes=require('./routes/outsideRoutes')(this.app);
 
-        this.api();
-    }
-    public api() {
+        require('./routes/debtRoutes')(this.app);
+        require('./routes/outsideRoutes')(this.app);
 
     }
 
     public config() {
 
-        this.app.use(express.static("../static"));
-        console.log(path.join(__dirname,"../static"));
+        this.app.use(express.static( path.join(__dirname, "../static")));
 
+
+        // for parsing application/json
         this.app.use(bodyParser.json());
-
-
+        // for parsing application/x-www-form-urlencoded
         this.app.use(bodyParser.urlencoded({
             extended: true
         }));
+        this.app.set("views", path.join(__dirname, "../views"));
+
+        this.app.set("view engine", "ejs");
+
+        /* this.app.use(bodyParser.urlencoded({
+             extended: true
+         }));*/
 
         //use cookie parser middleware
-        this.app.use(cookieParser("SECRET_GOES_HERE"));
+        this.app.use(session({
+            secret: 'keyboard cat',
+            cookie: {
+                maxAge: 1 * 1 * 30 * 60 * 1000
+            },
+            resave: true,
+            saveUninitialized: false
+        }));
+
         this.app.use(function (req:Request,res:Response,next:NextFunction) {
             res.tpl={};
             res.error=[];
+            res.tpl.error=[];
             return next();
 
         });

@@ -1,0 +1,81 @@
+<%- include('header') %>
+
+<ul class="nav nav-tabs">
+    <li class=" col-md-4"><a href="Home">Tartozások</a></li>
+    <li class="active col-md-4"><a href="New">Új Tartozás</a></li>
+    <li class=" col-md-4"><a href="Approve">Rendezés jováhagyása</a></li>
+</ul>
+<br>
+<form action="/New" method="POST">
+    <div class="row col-md-12 search-bar">
+        <div class=" col-md-2 col-md-push-2">
+            <div class="form-group ">
+                <label for="sum">Tartozás összege</label>
+                <input type="text" class="form-control" id="sum" name="sum" placeholder="" value="">
+            </div>
+        </div>
+        <div class=" col-md-2 col-md-push-3">
+            <div class="form-group ">
+                <label for="desc">Tartozás leírása</label>
+                <input type="text" class="form-control" name="comment" id="desc" placeholder="" value="">
+            </div>
+        </div>
+        <div class=" col-md-2 col-md-push-4">
+
+            <label for="filter">Név</label>
+            <input type="text" class="form-control" id="filter" name="filter" placeholder="" value="">
+
+        </div>
+        <div class=" col-md-2 col-md-push-4">
+
+            <button type="submit" id="filterStart" formmethod="post" formaction="/New"  class="btn btn-primary  hack  " name="onlyFilter" value="true">Keresd</button>
+
+        </div>
+
+
+    </div>
+
+    <div class="row col-md-8 col-md-push-2 pad-break">
+
+
+
+        <%
+        for (let x in selectedUsers)
+        {
+            let user2 = selectedUsers[x];
+        %>
+        <div class="col-md-6 pad-break ">
+            <div class="col-md-5">
+                <img src="default-image.jpg" width="70" height="70">
+            </div>
+
+            <div class="col-md-5 hack"><a href="Details/<%=user2.id%>"><%= user2.fullName %></a> </div>
+            <div class="col-md-2 hack">
+                <label><input id="<%=user2.id%>" name="selectedUsers[]" checked="true" type="checkbox" value="<%=user2.id%>"></label>
+            </div>
+        </div>
+        <% } %>
+
+
+        <%for (let i in users)
+        {
+            let user = users[i];
+        %>
+        <div class="col-md-6 pad-break ">
+            <div class="col-md-5">
+                <img src="default-image.jpg" width="70" height="70">
+            </div>
+
+            <div class="col-md-5 hack"><a href="Details/<%=user.id%>"><%= user.fullName %></a> </div>
+            <div class="col-md-2 hack">
+                <label><input id="<%=user.id%>" name="selectedUsers[]" type="checkbox" value="<%=user.id%>"></label>
+            </div>
+        </div>
+        <% } %>
+
+        <div class="col-md-12 text-center  row row-padding">
+            <button type="submit"   class="btn btn-primary col-md-6  "  formmethod="post" formaction="/Debt/Create" name="distribute" value="false">Adja hozzá a kiválasztottakhoz</button>
+            <button type="submit" class="btn btn-primary col-md-6  "   formmethod="post" formaction="/Debt/Create" name="distribute" value="true">Oszd el a kiválasztottak közt</button>
+        </div>
+</form>
+<%- include('footer') %>

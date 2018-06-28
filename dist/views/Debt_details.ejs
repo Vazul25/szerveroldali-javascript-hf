@@ -1,0 +1,145 @@
+<%- include('header') %>
+
+<div class=" ">
+
+    <ul class="nav nav-tabs">
+        <li class="active col-md-4"><a href="/Home">Tartozások</a></li>
+        <li class="col-md-4"><a href="/New">Új Tartozás</a></li>
+        <li class="col-md-4"><a href="/Approve">Rendezés jováhagyása</a></li>
+    </ul>
+    <br>
+    <div class="container">
+        <div class="row col-md-push-3 col-md-6 ">
+            <figure class="figure profile-pic-size center-margin">
+                <img width="200" height="200"
+                     src= "<%= usersDetails.purl %>"
+
+                     class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption text-center"><%= usersDetails.fullName %></figcaption>
+            </figure>
+
+        </div>
+        <div class="row col-md-12">
+            <p>Rendezetlen tartozások</p>
+            <hr class="style1">
+        </div>
+        <div class="row ">
+
+            <div class="col-md-6">
+                <div class="row text-center">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </div>
+                <%
+
+                for (let i in debts.debtsToMe) {
+                    var item = debts.debtsToMe[i];
+
+
+                    if(!(item.state==0))continue;
+                %>
+
+                <div class="col-md-12 text-center row-padding">
+                    <div class="col-md-6"><%=item.comment%></div>
+                    <div class="col-md-6"><%=item.sum%> Ft</div>
+                </div>
+                <% } %>
+
+
+
+
+
+            </div>
+            <form  method="post">
+                <div class="col-md-6">
+                    <div class="row text-center">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </div>
+                    <%
+                    ;
+                            for (let i in debts.myDebts) {
+                        var item = debts.myDebts[i];
+
+                        if(!(item.state==0))continue;
+                    %>
+
+                    <div class="col-md-12 text-center row-padding">
+                        <div class="col-md-5"><%=item.comment%></div>
+                        <div class="col-md-5"><%=item.sum%>Ft</div>
+                        <div class="col-md-2">
+                            <label><input id="<%=item.id%>" type="checkbox" name="toSettle[]" value="<%=item.id%>"></label>
+                        </div>
+                    </div>
+                    <% } %>
+
+
+
+                    <div class="col-md-12 text-center row-padding">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary take-all-space-you-can" type="button" onclick="selectAllCheckbox(this,'toSettle[]')">Összes kijelölése</button>
+                        </div>
+                        <div class="col-md-6"><input type="submit" class="btn btn-primary take-all-space-you-can" value="Kijelöltek rendezése"/></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row col-md-12">
+            <p>Archivált tartozások</p>
+            <hr class="style1">
+        </div>
+        <div class="row ">
+
+            <div class="col-md-6">
+                <div class="row text-center">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </div>
+
+                <%
+
+                for (let i in debts.debtsToMe) {
+                    var item = debts.debtsToMe[i];
+
+
+                    if(!(item.state==2))continue;
+                %>
+
+                <div class="col-md-12 text-center row-padding">
+                    <div class="col-md-6"><%=item.comment%></div>
+                    <div class="col-md-6"><%=item.sum%> Ft</div>
+                </div>
+                <% } %>
+
+
+
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="row text-center">
+                    <span class="glyphicon glyphicon-minus"></span>
+                </div>
+
+                <%
+                ;
+                        for (let i in debts.myDebts) {
+                    var item = debts.myDebts[i];
+
+                    if(!(item.state==2))continue;
+                %>
+
+                <div class="col-md-12 text-center row-padding">
+                    <div class="col-md-5"><%=item.comment%></div>
+                    <div class="col-md-5"><%=item.sum%>Ft</div>
+                </div>
+                <% } %>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<%- include('footer') %>

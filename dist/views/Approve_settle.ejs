@@ -1,0 +1,63 @@
+<%- include('header') %>
+
+<ul class="nav nav-tabs">
+    <ul class="nav nav-tabs">
+        <li class="col-md-4"><a href="Home">Tartozások</a></li>
+        <li class="col-md-4"><a href="New">Új Tartozás</a></li>
+        <li class="active col-md-4"><a href="Approve">Rendezés jováhagyása</a></li>
+    </ul>
+</ul>
+<br>
+<div class="container pad-break">
+
+
+    <form method="POST">
+       <!-- <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" id="email" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="">
+        </div>
+        <a href="/register" class="btn btn-info">Register</a>
+-->
+
+        <%
+
+        for (let i in debtsToApprove)
+        {
+            let item = debtsToApprove[i];
+        %>
+        <div class="col-md-8 col-md-push-2 pad-break">
+            <div class="col-md-3"><img src="<%=item.debtor.purl%>" height="70px"></div>
+
+            <div class="col-md-3 hack"><a href="Details/<%=item.debtor.id%>"><%=item.debtor.fullName%></a></div>
+            <div class="col-md-3 hack"><%=item.comment%></div>
+            <div class="col-md-2 hack"><%=item.sum%> Ft</div>
+            <div class="form-group col-md-1 hack">
+
+                <input type="checkbox" value="<%=item.id%>" name="toApprove[]" id="<%=item.id%>"  >
+
+            </div>
+
+        </div>
+        <% } %>
+
+
+        <div class="row ">
+            <div class="col-md-6 col-md-push-8  ">
+                <button class="btn btn-primary" type="button" onclick="selectAllCheckbox(this,'toApprove[]')">Összes kijelölése</button>
+            </div>
+
+        </div>
+        <div class="row pad-break ">
+            <div class="col-md-8 col-md-push-2">
+                <input type="submit" class="btn btn-primary" value="Rendezés jóváhagyása"/>
+
+            </div>
+
+        </div>
+    </form>
+</div>
+<%- include('footer') %>

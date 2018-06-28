@@ -1,0 +1,40 @@
+<%- include('header') %>
+ <div class="jumbotron vertical-center">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-push-3 col-md-6 ">
+                    <h2>Register</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-push-3 col-md-6 col-xs-12">
+
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="fname">Full Name</label>
+                            <input type="text" class="form-control" name="fname" id="fname" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" name="email" id="email" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="purl">Picture Url</label>
+                            <input type="text" class="form-control" name="purl" id="purl" placeholder="">
+                        </div>
+
+                        <input type="submit" class="btn btn-primary" value="Register"/>
+                        <a href="/Login" class="btn btn-info">Login</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('footer') %>

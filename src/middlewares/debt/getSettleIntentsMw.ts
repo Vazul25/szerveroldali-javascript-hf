@@ -1,12 +1,26 @@
-import {NextFunction, Request, Response} from "express";
+import {NextFunction,Request  } from "express";
+import {DebtModel} from "../../models/debtModel";
 
+import {Response} from "../../typings/MyResponseExtension"
 //Lekéri a rendezési szándékokat a jóváhagyó oldalhoz
-
+var requireOption = require('../generic/checkRepositoryMw').requireOption;
 module.exports = function (objectRepository:any) {
+    var debtModel:DebtModel = requireOption(objectRepository, 'debtModel');
+    return function (req, res: Response, next: NextFunction) {
 
-    return function (req: Request, res: Response, next: NextFunction) {
-        //
-        //objectRepository['db'].update
-        return next();
-    };
+
+
+            debtModel.getSettledDebtsForApprove(
+                req.session.userId,
+                function (err, result) {
+                    if (err ||!result) {
+                        res.tpl.debtstoAppove=[];
+                    }
+
+
+                    res.tpl.debtsToApprove = result;
+                    return next();
+                });
+        };
+
 }
